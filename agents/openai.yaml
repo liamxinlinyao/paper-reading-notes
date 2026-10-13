@@ -1,0 +1,7 @@
+interface:
+  display_name: "论文阅读与科研笔记"
+  short_description: "将学术论文转化为可复用的证据卡、科研笔记与下一步研究方案"
+  default_prompt: "使用 $paper-reading-notes 阅读这篇论文，先筛选价值，再生成证据、问题、方法、连接和研究卡。"
+policy:
+  allow_implicit_invocation: true
+

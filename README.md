@@ -1,56 +1,56 @@
 # Paper Reading Notes
 
-中文｜[English](README.en.md)
+English|[CHN](`README.zh-CN.md`)
 
-一个面向管理学与社会科学研究者的 Codex Skill：把论文从“读过并总结”转化为可以重新进入科研生产的研究资产。
+An OpenAI Codex Skill for management and social-science researchers. It turns academic papers from “read and summarize” tasks into reusable research assets.
 
-它帮助你判断一篇论文是否值得精读，重建作者的研究过程，检查结论与证据的对应关系，并把真正有复用价值的内容沉淀为问题卡、证据卡、方法卡、连接卡和研究卡。
+The skill helps you decide whether a paper deserves deep reading, reconstruct the author’s research process, audit claims against evidence, and preserve reusable content as question, evidence, method, connection, and research cards.
 
-## 为什么需要这个 Skill
+## Why use this skill?
 
-普通的论文摘要通常只能回答“作者做了什么”。科研阅读还需要回答：
+A conventional summary usually answers only “What did the authors do?” Research reading also needs to answer:
 
-- 作者没有回答什么？这个缺口是否值得继续追？
-- 作者的结论由什么证据支持？我应该相信到什么程度？
-- 这个研究设计以后还能解决什么问题？迁移需要哪些条件？
-- 这篇论文与其他领域、机制或矛盾文献有什么可检验的连接？
+- What did the paper leave unresolved, and is the gap worth pursuing?
+- What evidence supports each claim, and how strongly should I believe it?
+- What can I reuse from the research design, and what would transfer require?
+- What testable connection does this paper create with another field, mechanism, or conflicting finding?
 
-这个 Skill 将论文阅读组织成两个阶段：先快速筛选，再对高价值论文进行完整精读。
+The skill uses two stages: screen first, then deep-read papers that have clear research value.
 
-## 核心工作流
+## Core workflow
 
-完整阅读包括：
+A full reading includes:
 
-1. 识别论文身份、材料完整度和研究类型。
-2. 判断是否值得精读，并记录主要风险。
-3. 重建“已有认识 → 缺口 → 问题 → 假设/机制 → 设计 → 分析 → 结论”的研究过程。
-4. 找出数据、样本、模型、对照和识别策略上的关键分叉点。
-5. 将每条核心结论对应到图、表、附录或其他证据位置。
-6. 生成四类科研笔记。
-7. 将最有价值的缺口或连接转化为研究卡和下一步行动。
+1. Identify the paper, source completeness, and research type.
+2. Decide whether the paper deserves deep reading and record the main risks.
+3. Reconstruct the chain: prior knowledge → gap → question → hypothesis/mechanism → design → analysis → conclusion.
+4. Identify decision points involving data, samples, models, controls, and identification strategies.
+5. Map each core claim to the relevant figure, table, appendix, or other evidence.
+6. Generate four types of research notes.
+7. Turn the most valuable gap or connection into a research card and next action.
 
-图表解读固定回答六个问题：为什么做、怎么做、怎么看、发现什么、支持到哪、为什么接下一张图。
+For every important figure or table, answer six questions: Why was it created? How was it created? How should it be read? What does it find? What does it support? Why does the next figure follow?
 
-## 四类科研笔记
+## Four research-note types
 
-| 笔记 | 核心问题 | 典型产出 |
-|---|---|---|
-| 问题卡 | 还有什么没有解决？ | 缺口、研究问题、支持/证伪条件 |
-| 证据卡 | 我应该相信什么？ | 主张、证据位置、边界、可信度 |
-| 方法卡 | 以后可以怎么研究？ | 适用问题、设计逻辑、迁移条件、常见坑 |
-| 连接卡 | 新的想法从哪里长出来？ | 跨领域机制、可检验预测、下一步检索 |
+| Note            | Core question                     | Typical output                                                 |
+| --------------- | --------------------------------- | -------------------------------------------------------------- |
+| Question card   | What remains unresolved?          | Gap, research question, support/falsification conditions       |
+| Evidence card   | What should I believe?            | Claim, evidence location, scope, confidence                    |
+| Method card     | How could I study this later?     | Suitable problems, design logic, transfer conditions, pitfalls |
+| Connection card | Where could a new idea come from? | Cross-field mechanism, testable prediction, search terms       |
 
-研究卡进一步记录最小研究设计、关键对照、判断标准、数据需求、可行性和放弃条件。
+A research card adds the minimum design, key comparison, decision rule, data needs, feasibility, and stopping conditions.
 
-## 证据原则
+## Evidence principles
 
-- 严格区分原文事实、作者解释、Skill 的推断和研究者的新想法。
-- “显著”不自动等于重要、因果、机制成立或可推广。
-- 实验、观察研究、质性研究、理论研究和方法论文使用不同的核查标准。
-- 摘要、网页占位符和二手转述只能进入待读或发现队列，不能直接支撑持久化结论。
-- 无法核验的内容明确标记为“未核验”，不补写缺失信息。
+- Keep original facts, author interpretations, skill inferences, and researcher ideas separate.
+- Statistical significance does not automatically imply practical importance, causality, mechanism, or generalizability.
+- Use different checks for experiments, observational studies, qualitative studies, theory papers, and methods papers.
+- Abstracts, webpage placeholders, and second-hand summaries may enter a reading queue, but cannot directly support durable knowledge claims.
+- Mark unavailable or unchecked information as `unverified`; never fill in missing evidence.
 
-## 生成的 Markdown 目录
+## Markdown knowledge structure
 
 ```text
 Sources/Papers/
@@ -61,36 +61,37 @@ Knowledge/Connections/
 Research-Cards/
 ```
 
-卡片模板和稳定身份、重复更新规则见 [`references/note-schema.md`](references/note-schema.md)。不同研究类型的证据标准见 [`references/evidence-standards.md`](references/evidence-standards.md)。
+See [`references/note-schema.md`](references/note-schema.md) for card templates, stable identities, and update rules. See [`references/evidence-standards.md`](references/evidence-standards.md) for research-type-specific evidence standards.
 
-## 安装
+## Installation
 
-将整个 `paper-reading-notes` 文件夹复制到当前用户的 Codex skills 目录：
+Copy the entire `paper-reading-notes` directory into the current user’s Codex skills directory:
 
 ```text
 Windows: %USERPROFILE%\\.codex\\skills\\paper-reading-notes
 macOS/Linux: ~/.codex/skills/paper-reading-notes
 ```
 
-安装后可在 Codex 中调用：
+Then invoke it in Codex:
 
 ```text
-使用 $paper-reading-notes 阅读这篇论文，先筛选价值，再生成四类科研笔记和研究卡。
+Use $paper-reading-notes to read this paper. Screen it first, then generate the four research-note types and a research card.
 ```
 
-如果要保存笔记，请同时指定 Markdown 根目录，例如：
+If you want files saved, provide a Markdown root directory:
 
 ```text
-将可复用卡片保存到 D:\\Research\\Literature。
+Save reusable cards under D:\\Research\\Literature.
 ```
 
-## 仓库中应提交的文件
+## Files to publish
 
-建议提交以下文件和目录：
+Recommended repository layout:
 
 ```text
 paper-reading-notes/
 ├── README.md
+├── README.en.md
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
@@ -99,19 +100,14 @@ paper-reading-notes/
     └── note-schema.md
 ```
 
-不需要提交：
+Do not commit user PDFs, private notes, generated knowledge bases, temporary work files, Python caches, or editor settings. The ZIP archive can be attached to a GitHub Release, but does not need to be duplicated in the source tree.
 
-- `paper-reading-notes.zip`：发布包可作为 Release 附件，通常不必与源文件重复提交。
-- `work/`：静态演练和临时文件。
-- 用户自己的 PDF、论文全文、个人笔记和生成的 Markdown 知识库。
-- Python 缓存、操作系统临时文件和编辑器配置。
+## Versioning and contributions
 
-## 版本与贡献
+When changing the workflow, card fields, or evidence standards, update `metadata.version` in `SKILL.md` and describe the behavior change. When adding a research type, update both `references/evidence-standards.md` and this README.
 
-修改 `SKILL.md` 的工作流、卡片字段或证据标准时，请同步更新 `metadata.version`，并说明行为变化。新增研究类型的规则时，应同时更新 `references/evidence-standards.md` 和 README 中的说明。
+Before publishing, run the Codex skill validator to verify the frontmatter and directory structure.
 
-提交前建议运行 Codex skill validator，确认 `SKILL.md` 的 YAML frontmatter 和目录结构有效。
+## Limitations
 
-## 限制
-
-这个 Skill 负责组织阅读、证据判断和研究想法沉淀，不替代研究者对问题价值、证据可信度、方法适配性和理论连接的最终判断。它也不会把缺失的全文、图表数据或统计信息补出来。
+This skill organizes reading, evidence judgment, and idea development. It does not replace the researcher’s final judgment about problem value, evidence quality, method fit, or theoretical connections. It also does not invent missing full text, figures, data, or statistics.

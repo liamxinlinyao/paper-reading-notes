@@ -1,6 +1,6 @@
 # Paper Reading Notes
 
-English|[CHN](`README.zh-CN.md`)
+English | [CHN](README.zh-CN.md)
 
 An OpenAI Codex Skill for management and social-science researchers. It turns academic papers from “read and summarize” tasks into reusable research assets.
 
